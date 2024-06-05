@@ -1,0 +1,17 @@
+{
+    "name":"PWA Test",
+    "short_name":"Test",
+    "theme_color":"orange",
+    "background_color":"green",
+    "display":"standalone",
+    "orientation":"portrait",
+    "scope":"./",
+    "start_url":"./",
+    "icons":[
+        {
+            "src":"./logobcr1.png",
+            "type":"image/png",
+            "sizes":"250x236"       
+        }
+    ]
+}
