@@ -6,11 +6,21 @@
     <title>TestPWA</title>
     <link rel="manifest" href="./manifest.json">
     <script>
-        if("serviceWorker" in navigator){
+      /*  if("serviceWorker" in navigator){
             console.log("soporta service Worker");
             navigator.serviceWorker.register("sw.js");
         }else{
             console.log("NO soporta service Worker");
+        }*/
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').then(registration => {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }).catch(error => {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
         }
 
     </script>
@@ -19,7 +29,7 @@
     <div style="background-color: blueviolet;">
         <h1>Soy un PWA, probando 123</h1>
     </div>
-    
+
     <script src="./script.js"></script>
 </body>
 </html>
