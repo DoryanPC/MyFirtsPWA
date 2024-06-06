@@ -9,9 +9,9 @@
     "start_url":"./",
     "icons":[
         {
-            "src":"./logobcr1.png",
-            "type":"image/png",
-            "sizes":"250x236"       
+           "src": "./imagen_icono.png",
+            "type": "image/png",
+            "sizes": "512x512"     
         }
     ]
 }
